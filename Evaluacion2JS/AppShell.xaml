@@ -8,8 +8,8 @@
     Title="Evaluacion2JS">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        Title="Telefonica Juan"
+        ContentTemplate="{DataTemplate local:Telefonica}"
         Route="MainPage" />
 
 </Shell>
