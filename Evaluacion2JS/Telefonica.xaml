@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
+    
+    
+    
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Evaluacion2JS.Telefonica"
              Title="Recargas Telefonicas">
-    
+
+ 
     
     <VerticalStackLayout>
         <Label 
             Text="Hola papu Bienvenido!"
             VerticalOptions="Center" 
-            HorizontalOptions="Start"
+            HorizontalOptions="Center"
             FontSize="Large"
             />
 
-        <Label
+        <StackLayout>
+
+            <Label
             VerticalOptions="Center"
             HorizontalOptions="Center">
 
-            <Label.FormattedText>
+                <Label.FormattedText>
 
-                <FormattedString>
-                    <Span Text="Ingrese su numero de telefono: " FontSize="30" FontAttributes="Bold" />
+                    <FormattedString>
+                        <Span Text="Ingrese su numero de telefono: " FontSize="30" FontAttributes="Bold" />
+                    </FormattedString>
 
-                </FormattedString>
-            </Label.FormattedText>
+                </Label.FormattedText>
+      
+            </Label>
+            <StackLayout>
+                <Entry x:Name="entryTelefono"
+               Placeholder="Número de teléfono"
+               FontSize="20"
+               HorizontalOptions="Center"
+                   MaximumHeightRequest="10"/>
 
-        </Label>
+            </StackLayout>
+
+        </StackLayout>
 
         <Picker x:Name="Pico"
         Title="Selecciona tu operadora">
@@ -44,7 +60,8 @@
             <RadioButton Content="5$" />
             <RadioButton Content="10$" 
            
-                 IsChecked="true" />
+                 IsChecked="true"/>
+            
         </StackLayout>
 
         <StackLayout>
@@ -58,6 +75,8 @@
         VerticalOptions="Center"
         HorizontalOptions="Center" />
         </StackLayout>
+
+     
 
     </VerticalStackLayout>
     
